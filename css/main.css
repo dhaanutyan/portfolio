@@ -1,0 +1,82 @@
+html, body {
+    overflow-x: hidden;
+}
+body{
+}
+footer{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+p {
+    font-family: "Verdana", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    letter-spacing:0.8px;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 0;
+}
+.order-01-01 {z-index: 99999;}
+h1,h2 {
+    font-family: Georgia;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+h3,h4,h5,h6 {
+     font-family: "Verdana", Helvetica, Arial, sans-serif;
+     font-weight: 300;
+    letter-spacing: 1px;
+     margin-top: 0;
+     margin-bottom: 20px;
+}
+.photo-of-me {
+    margin-right: 40px;
+    margin-bottom: 20px;
+    float: left;
+}
+.photo-in-box {
+    box-snap: block-end;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    align-self: center;
+}
+.about-me {
+    width: 100%;
+    padding: 3%;
+}
+.about-me-text {
+    margin-top: 20px;
+    float: left;
+}
+.navbar-add-style {width: 50px}
+.block-main {width: 100%;}
+.block-inside {
+    width: 33.3%;
+    height: 480px;
+    padding: 3%;
+    z-index: 999;
+    text-align: center;
+    align-items: center;
+}
+.block-color-01 {
+    background-color: #f2f1f2;
+}
+.block-color-02 {
+    background-color: #000;
+    color: #FFFFFF;
+}
+.block-color-03 {
+    background-color: #f2f1f2;
+}
+.block-color-04 {
+    background-color: #fce7f2;
+}
+.block-color-05 {
+    background-color: #000;
+    color: #FFFFFF;
+}
+.block-color-06 {
+    background-color: #fff;
+
+}
