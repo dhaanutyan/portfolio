@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap 101 Template</title>
+    <title>Portfolio</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -18,17 +18,30 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 
     <![endif]-->
+    <script src="http://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js"></script>
+<script type="text/javascript">
+  WebFont.load({
+    google: {
+      families: ['Cantarell', 'Inconsolata', 'Roboto']
+    }
+  });
+</script>
+<style type="text/css">
+  .wf-loading h1 { visibility: hidden; }
+  .wf-active h1, .wf-inactive h1 { 
+    visibility: visible; font-family: 'Cantarell', 'Inconsolata', 'Roboto'; 
+  }
+</style>
 </head>
 <body>
 <div class="container about-me">
     <div class="photo-of-me">
-        <img width="200px" height="200px" src="m.jpg">
+        <img src="m.jpg" width="200px" height="200px" class="img-circle">
     </div>
     <div class="about-me-text">
-    <h1>Victoria Onishuk</h1>
-    <h4>Product designer</h4>
-    <p>Mobile app design, Information architecture, Research and testing.</p>
-    <p> E-mail: <a href="mailto: victoria.onishuk@gmail.com">victoria.onishuk@gmail.com</a></p>
+      <h1 style="margin-left: -5px">Victoria Onishchuk</h1>
+      <h4>Product designer, UX, UI, mobile, VR</h4>
+      <p> E-mail: <a href="mailto: victoria.onishuk@gmail.com">victoria.onishuk@gmail.com</a></p>
     <p> Phone: <a href="tel: +7 926 622 699 8"> +7 926 622 699 8 </a> </p>
 </div>
 </div>
@@ -36,17 +49,18 @@
 <div class="container block-main">
     <!-- Example row of columns -->
     <div class="row">
-        <div class="col-md-4 block-inside block-color-01">
-            <h2>Information architecture</h2>
-            <p>The art and science of organizing and labelling websites, intranets, online communities and software to support usability and findability.</p>
-            <div class="photo-in-box">
-                <img width="256px" height="285px" src="stlt_mob.png">
-            </div>
-        </div>
-        <div class="col-md-4 block-inside block-color-02">
-            <h2>Reserch</h2>
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-        </div>
+        <a href="https://www.artlebedev.com/stoloto/mobile/"><div class="col-md-4 block-inside block-color-01">
+          <h2>Gambling store</h2>
+          <h4>Mobile site</h4>
+            <div class="photo-in-box"> </div>
+        </div></a>
+        <a href="https://www.artlebedev.com/stoloto/mobile/"><div class="col-md-4 block-inside block-color-02">
+          <h2 class="text-left">Designing SMM&amp;A flow&#8209;based interface</h2>
+          <p class="text-left">What actually this tool does?</p>
+          <p class="text-left">Who uses this software and how?</p>
+          <p class="text-left">How simplify it for non-tech users?</p>
+          <p class="text-left">Could this inteface be Hololence-ready? </p>
+        </div></a>
         <div class="col-md-4 block-inside block-color-03">
             <h2>Analitics</h2>
             <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
