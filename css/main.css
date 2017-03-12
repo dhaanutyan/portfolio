@@ -8,23 +8,35 @@ footer{
     margin-bottom: 20px;
 }
 p {
-    font-family: "Verdana", Helvetica, Arial, sans-serif;
+    font-family: Roboto;
     font-weight: 300;
-    letter-spacing:0.8px;
-    font-size: 14px;
+    letter-spacing:1px;
+    font-size: 15px;
     line-height: 20px;
-    margin-bottom: 0;
+    margin-bottom: 10px;
+}
+a {
+text-decoration-color: blue;
+text-decoration-line: underline;    
 }
 .order-01-01 {z-index: 99999;}
 h1,h2 {
-    font-family: Georgia;
-    font-weight: bold;
+    font-family: Cantarell;
+    font-weight: bolder;
     margin-top: 0px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 h3,h4,h5,h6 {
-     font-family: "Verdana", Helvetica, Arial, sans-serif;
+     font-family: Inconsolata;
+     font-weight: 300;
+    letter-spacing: 1px;
+     margin-top: 0;
+     margin-bottom: 20px;
+}
+h4 {
+     font-family: Inconsolata;
+	color: #CCCCCC;
      font-weight: 300;
     letter-spacing: 1px;
      margin-top: 0;
@@ -36,7 +48,6 @@ h3,h4,h5,h6 {
     float: left;
 }
 .photo-in-box {
-    box-snap: block-end;
     margin-top: 20px;
     margin-bottom: 0px;
     align-self: center;
@@ -53,17 +64,20 @@ h3,h4,h5,h6 {
 .block-main {width: 100%;}
 .block-inside {
     width: 33.3%;
-    height: 480px;
+    height: 500px;
     padding: 3%;
     z-index: 999;
     text-align: center;
     align-items: center;
 }
 .block-color-01 {
-    background-color: #f2f1f2;
+	background: url(stlt_mob.png) #F2F2F2 no-repeat bottom;
+	background-size: contain;
+	color: #000;
 }
 .block-color-02 {
-    background-color: #000;
+	background: url(tdw_dskt.png) no-repeat bottom;
+    background-color: #042233;
     color: #FFFFFF;
 }
 .block-color-03 {
