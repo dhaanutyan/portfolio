@@ -1,0 +1,85 @@
+/*!
+ * Start Bootstrap - Blog Post (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+body {
+    padding-top: 20px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation 
+	changes. */
+}
+
+footer {
+    margin: 50px 0;
+}
+
+p {
+    font-family: Roboto;
+    font-weight: 300;
+    letter-spacing:0px;
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 20px;
+	
+}
+ul
+{margin-top: -20px;}
+li {
+	text-decoration: none;
+    font-family: Roboto;
+    font-weight: 300;
+    letter-spacing:0px;
+    font-size: 16px;
+    line-height: 26px;
+	
+   
+}
+a {
+text-decoration-color: blue;
+text-decoration-line: underline; 
+	
+}
+.order-01-01 {z-index: 99999;}
+
+h1 {
+    font-family: Cantarell;
+    font-weight: bolder;
+    margin-top: 0px;
+	font-size: 56px;
+    margin-bottom: 24px;
+	line-height: 64px;
+	
+}
+h2 {
+    font-family: Cantarell;
+    font-weight: bolder;
+    margin-top: 0px;
+	font-size: 36px;
+    margin-bottom: 20px;
+	line-height: 44px;
+	
+
+}
+
+h3,h4,h5,h6 {
+     font-family: Inconsolata;
+     font-weight: 300;
+     letter-spacing: 1px;
+     margin-top: 60px;
+     margin-bottom: 20px;
+	
+}
+h4 {
+     font-family: Inconsolata;
+	 color: #9B9B9B;
+     font-weight: 300;
+     letter-spacing: 1px;
+     margin-top: 0;
+	 line-height: 24px;
+     margin-bottom: 6px;
+	
+}
+.text_f
+{
+	align-content: center;
+}
