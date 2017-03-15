@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Blog Post - Start Bootstrap Template</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/blog-post.css" rel="stylesheet">
+ 
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+ <script src="http://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js"></script>
+<script type="text/javascript">
+  WebFont.load({
+    google: {
+      families: ['Cantarell', 'Inconsolata', 'Roboto']
+    }
+  });
+</script>
+<style type="text/css">
+  .wf-loading h1 { visibility: hidden; }
+  .wf-active h1, .wf-inactive h1 { 
+    visibility: visible; font-family: 'Cantarell', 'Inconsolata', 'Roboto'; 
+  }
+</style>
+</head>
+
+<body>
+ <div class="container"  >
+	 <a href="index.html">⟵ Back to main page</a>
+	 <p>&nbsp;</p>
+	</div>
+    <!-- Navigation -->
+    <!-- Page Content -->
+    <div class="container" >
+        <div class="row">
+          <div class="col-sm-8 col-sm-offset-2">
+
+            <h1>Database manager for merging and comparing</h1>
+            <h4>Разработка утилиты которая осуществляет слияние 2х баз данных, сохраняет этот процесс в временный файл в котором можно его корректировать, сохранять и продолжать корректирование что бы затем экспортировать слитую базу данных в нужный формат.
+</h4>       
+            <h3>The problem to think and to solve</h3>
+            <p>Пытаемся понять какого типа ошибки могут возникать при слиянии. Раскладываем базу на таблицы. Перебираем различные варианты не совпадений параметров. 
+— Для различий в таблицах в виде отсутствия записи или параметра решений не нужно так как чаще всего по умолчанию при слиянии баз сохраняется максимально возможное количество информации.
+— Для различий в таблицах в виде когда информация записывается поверх существующей и находит на этом месте другую информацию возникнет конфликт. Предполагаемо их и нужно решать.
+— При слиянии баз данных обычно прописывают правила и условия слияния.
+— Для одной записи могут быть несовпадения по нескольким параметрам. 
+— Для записи типа один к одному можно предложить варианты ручного исправления в виде использования данных  А, использования данных Б и заполнение поля произвольным значением.
+— Для записи типа один ко многим кроме вариантов А и Б можно предложить выбор из параметров. 
+            Для понимания процесса слияния баз данных представим себе определенную структуру базы данных для примера:</p>
+          </div>
+        </div>
+    </div>
+                <img class="img-responsive center-block" src="images/db_1.png" alt="">
+    
+        <div class="container" >
+        <div class="row">
+          <div class="col-sm-8 col-sm-offset-2">
+                
+                <h3>Research</h3>
+                <p> Собираем тест группу из программистов имеющих опыт работы с базами. Расспрашиваем подробно чем они пользуются для этого и как выглядит их процесс. Какие чаще всего возникают ошибки и как они их исправляют. В том числе собираем скриншоты интерфейсов связанных с базами данных сравнением двух баз данных и слиянием данных.</p>
+                
+           
+                </div>
+        </div>
+    </div>
+                <img class="img-responsive center-block" src="images/db_2.png" alt="">
+             <div class="container" >
+        <div class="row">
+          <div class="col-sm-8 col-sm-offset-2"> 
+            <h3>User flow</h3>
+                <p>На основе проведенных интервью и собранных данных воссоздаем процесс использования  утилиты.</p>
+               
+                 </div>
+     </div>
+</div>
+                
+                  <img class="img-responsive center-block" src="images/db_3.png" alt="">
+              <div class="container" >
+        <div class="row">
+          <div class="col-sm-8 col-sm-offset-2">
+              
+            <h3>First try</h3>
+                <p>Пытаемся представить себе вид этой утилиты в трех экранах. Предполагаю что процесс может быть пошаговым. 
+Предполагаем что 
+— нужно подгрузить 2 базы данных и куда то сохранить третью. Так же возможно что базы данных будут загружаться с удаленных серверов.
+— Нужно предложить правила  и настройки применимые для всей базы перед слиянием.
+— Хорошо бы держать перед глазами структуру загруженных баз ( предполагаем что она одинаковая или вроде того).
+— Нужно оставить возможность поштучного редактирования конфликтов.</p>
+                 </div>
+     </div>
+</div>
+                <img class="img-responsive center-block" src="images/db_4.png" alt="">
+          <div class="container" >
+        <div class="row">
+          <div class="col-sm-8 col-sm-offset-2">
+            <h3>Testing</h3>
+                <p>Возвращаемся к тест группе программистов. Предлагаем им оценить прототип утилиты для слияния баз и исправления ошибок.  Собираем обширный фидбэк:
+— Программистам хотелось бы наглядно видеть количество конфликтов в каждой таблице отдельно. Так как от этого может зависеть тип конфликта. 
+— Правила действующие автоматически хотелось бы применять к каждой таблице отдельно как и ко всей базе в целом.
+— Очень не хватает предпросмотра таблицы в выделенными в ней конфликтами. 
+— Открытую запись для редактирования привычнее видеть в столбик а не в строку.
+— Названия параметров внутри таблицы в левой плашке бесполезны. и не интересны.
+— Утилита  не будет подгружать фотографии из дампов  (точно!)
+— Удаление конфликтных параметров вообще для массового решения вопроса нецелесообразно (см пункт о том что при слиянии пытаются сохранить максимум данных)
+
+Собираем новую версию. Учитываем ошибки. Снова тестируем на программистах. Остаются детали. Исправляем. Хотелок еще много, поэтому останавливаюсь на определенном функционале и возможностях.</p>
+                 </div>
+     </div>
+</div>
+                <img class="img-responsive center-block" src="images/db_5.png" alt="">
+        <div class="container" >
+        <div class="row">
+          <div class="col-sm-8 col-sm-offset-2">
+            <h3>Layout structure</h3>
+                <p>I defined the structure of current stage and rebuild it partly to simplify work with instruments. The most evident problem in logic of To make more significant changes I need to understand exactly how each element works and purpose it is used for. But even on this stage </p>
+                 </div>
+     </div>
+</div>
+                <img class="img-responsive center-block" src="images/db_6.png" alt="">
+          <div class="container" >
+        <div class="row">
+          <div class="col-sm-8 col-sm-offset-2">
+            <h3>Element system</h3>
+                <p>Analysing the working principle of this interface, I made a number of simplifications in the data flow design. I merged tool, configuration and its result in one block and indicated all data on it. By double click, you can manage the element.  </p>
+                 </div>
+     </div>
+</div>
+                <img class="img-responsive center-block" src="images/db_7.png" alt="">
+          <div class="container" >
+        <div class="row">
+          <div class="col-sm-8 col-sm-offset-2">
+            <h3>Compact view</h3>
+                <p>Scaling and moving work area not one-way scrolling
+Managing the blocks we can easy stick it together to get more space or drag and drop it by any touch interface wich make this system ready for mobile devices. </p>
+                 </div>
+     </div>
+</div>
+                <img class="img-responsive center-block" src="images/db_8.png" alt="">
+              <div class="container" >
+        <div class="row">
+          <div class="col-sm-8 col-sm-offset-2">
+            <h3>Adding new element</h3>
+                <p>For adding a new element we can have the second interface. We can drag and drop any item to work area or push on “plus” button and also get the menu.  </p>
+                 </div>
+     </div>
+</div>
+                <img class="img-responsive center-block" src="images/db_9.png" alt="">
+           <div class="container" >
+        <div class="row">
+          <div class="col-sm-8 col-sm-offset-2">
+            <h3>Work area</h3>
+                <p>I defined the structure of current stage and rebuild it partly to simplify work with instruments. The most evident problem in logic of To make more significant changes I need to understand exactly how each element works and purpose it is used for. But even on this stage </p>
+                 
+                  <hr>
+                   <h3>Same</h3>
+                   
+                   <hr>
+                 </div>
+     </div>
+</div>
+        
+
+        <!-- Footer -->
+        
+    <footer>
+      <p class="text-center">&copy; 2008—2017 Me, Inc.</p>
+    </footer>
+ <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
