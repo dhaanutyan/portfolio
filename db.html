@@ -51,17 +51,24 @@
           <div class="col-sm-8 col-sm-offset-2">
 
             <h1>Database manager for merging and comparing</h1>
-            <h4>Разработка утилиты которая осуществляет слияние 2х баз данных, сохраняет этот процесс в временный файл в котором можно его корректировать, сохранять и продолжать корректирование что бы затем экспортировать слитую базу данных в нужный формат.
+            <h4>Design Utilities that merge 2 relational databases, saves this process in a temporary file for later editing and exporting the new database to the desired format.
 </h4>       
             <h3>The problem to think and to solve</h3>
-            <p>Пытаемся понять какого типа ошибки могут возникать при слиянии. Раскладываем базу на таблицы. Перебираем различные варианты не совпадений параметров. 
-— Для различий в таблицах в виде отсутствия записи или параметра решений не нужно так как чаще всего по умолчанию при слиянии баз сохраняется максимально возможное количество информации.
-— Для различий в таблицах в виде когда информация записывается поверх существующей и находит на этом месте другую информацию возникнет конфликт. Предполагаемо их и нужно решать.
-— При слиянии баз данных обычно прописывают правила и условия слияния.
-— Для одной записи могут быть несовпадения по нескольким параметрам. 
-— Для записи типа один к одному можно предложить варианты ручного исправления в виде использования данных  А, использования данных Б и заполнение поля произвольным значением.
-— Для записи типа один ко многим кроме вариантов А и Б можно предложить выбор из параметров. 
-            Для понимания процесса слияния баз данных представим себе определенную структуру базы данных для примера:</p>
+            <p>What is relational Database? </p>
+            <p>Why somebody needs the special tool for merging? </p>
+            <p>Who will use this tool? </p>
+            <p>What feature makes this tool comfortable for users and unique on the market? </p>
+            <p>How the is the process of merging databases going on? </p>
+            <p>Where is the point of success in this process? </p>
+            <h3>Research </h3>
+            <p>A database is kind of related data and the way it is organised. The relational database help to track information about on example users, their names, logins information, various groups and projects they are involved and normalised it into a user table, groups table and projects table, accordingly. </p>
+            <p>When information was being collected about a user, information stored in the optional tables would be found by searching for a special key. For instance, if the login name of a user is unique, all information about that user would be recorded with the login name as its key. Keys and table names play a "key" role when comparing or merging databases because it is for them to determine the identity of data. </p>
+            <p>A relational database management system uses MERGE statements to write new or overwrite existing records depending on whether condition matches. Structure and tables comparing before merging. Each time software or script find differences it doesn't know what to do unless you create a rule for each situation or manage it manually. That's why It is much easier merge the databases with the same structure, especially if you try to automate the process. Lucky I have this particular case! </p>
+            <p>In an attempt to understand what kind of errors can occur till merging I decompose the database into tables and search for various situations with unequal data. </p>
+            <p>— If the one field in the database A matches the same field in the database B </p>
+            <p>— If the one field in the database A does not match the same field in the database B </p>
+            <p>— If the one field does not exist in the database A but does exist in the database B. </p>
+            <p>— If the one field does not exist in the database B but does exist in the database A. </p>
           </div>
         </div>
     </div>
@@ -70,22 +77,26 @@
         <div class="container" >
         <div class="row">
           <div class="col-sm-8 col-sm-offset-2">
-                
-                <h3>Research</h3>
-                <p> Собираем тест группу из программистов имеющих опыт работы с базами. Расспрашиваем подробно чем они пользуются для этого и как выглядит их процесс. Какие чаще всего возникают ошибки и как они их исправляют. В том числе собираем скриншоты интерфейсов связанных с базами данных сравнением двух баз данных и слиянием данных.</p>
-                
-           
-                </div>
+            <h3>Audience</h3>
+            <p> Developers, data architects, and others who regularly work with databases often need to locate changes, migrate differences, or synchronise versions of database tables. They need database compare and merge tool to satisfy all these requirements. </p>
+</div>
         </div>
     </div>
                 <img class="img-responsive center-block" src="images/db_2.png" alt="">
              <div class="container" >
         <div class="row">
-          <div class="col-sm-8 col-sm-offset-2"> 
-            <h3>User flow</h3>
-                <p>На основе проведенных интервью и собранных данных воссоздаем процесс использования  утилиты.</p>
-               
-                 </div>
+          <div class="col-sm-8 col-sm-offset-2">
+            <p>I gather a test group of 8 programmers who have experience with databases and ask in detail what they use for this and how their process looks. What are the most common mistakes and how do they fix them. Including we collect screenshots of interfaces related to databases by comparing two databases and merging data. </p>
+           </div>
+        </div>
+    </div>
+                <img class="img-responsive center-block" src="images/db_2.png" alt="">
+             <div class="container" >
+        <div class="row">
+          <div class="col-sm-8 col-sm-offset-2">
+             <h3>User flow</h3>
+            <p>Based on the interviews and data collected, we recreate the process of using the utility.</p>
+          </div>
      </div>
 </div>
                 
@@ -109,34 +120,36 @@
         <div class="row">
           <div class="col-sm-8 col-sm-offset-2">
             <h3>Testing</h3>
-                <p>Возвращаемся к тест группе программистов. Предлагаем им оценить прототип утилиты для слияния баз и исправления ошибок.  Собираем обширный фидбэк:
-— Программистам хотелось бы наглядно видеть количество конфликтов в каждой таблице отдельно. Так как от этого может зависеть тип конфликта. 
-— Правила действующие автоматически хотелось бы применять к каждой таблице отдельно как и ко всей базе в целом.
-— Очень не хватает предпросмотра таблицы в выделенными в ней конфликтами. 
-— Открытую запись для редактирования привычнее видеть в столбик а не в строку.
-— Названия параметров внутри таблицы в левой плашке бесполезны. и не интересны.
-— Утилита  не будет подгружать фотографии из дампов  (точно!)
-— Удаление конфликтных параметров вообще для массового решения вопроса нецелесообразно (см пункт о том что при слиянии пытаются сохранить максимум данных)
-
-Собираем новую версию. Учитываем ошибки. Снова тестируем на программистах. Остаются детали. Исправляем. Хотелок еще много, поэтому останавливаюсь на определенном функционале и возможностях.</p>
-                 </div>
+            <p>Возвращаемся к тест группе программистов. Предлагаем им оценить прототип утилиты для слияния баз и исправления ошибок.  Собираем обширный фидбэк:
+              — Программистам хотелось бы наглядно видеть количество конфликтов в каждой таблице отдельно. Так как от этого может зависеть тип конфликта. 
+              — Правила действующие автоматически хотелось бы применять к каждой таблице отдельно как и ко всей базе в целом.
+              — Очень не хватает предпросмотра таблицы в выделенными в ней конфликтами. 
+              — Открытую запись для редактирования привычнее видеть в столбик а не в строку.
+              — Названия параметров внутри таблицы в левой плашке бесполезны. и не интересны.
+              — Утилита  не будет подгружать фотографии из дампов  (точно!)
+              — Удаление конфликтных параметров вообще для массового решения вопроса нецелесообразно (см пункт о том что при слиянии пытаются сохранить максимум данных)
+              
+              Собираем новую версию. Учитываем ошибки. Снова тестируем на программистах. Остаются детали. Исправляем. Хотелок еще много, поэтому останавливаюсь на определенном функционале и возможностях.</p>
+            <h3> Start</h3>
+            <p>&nbsp;</p>
+          </div>
      </div>
 </div>
                 <img class="img-responsive center-block" src="images/db_5.png" alt="">
         <div class="container" >
         <div class="row">
           <div class="col-sm-8 col-sm-offset-2">
-            <h3>Layout structure</h3>
-                <p>I defined the structure of current stage and rebuild it partly to simplify work with instruments. The most evident problem in logic of To make more significant changes I need to understand exactly how each element works and purpose it is used for. But even on this stage </p>
-                 </div>
+            <h3>Creating rules</h3>
+            <p>When you compare different database types, you will get a warning </p>
+          </div>
      </div>
 </div>
                 <img class="img-responsive center-block" src="images/db_6.png" alt="">
           <div class="container" >
         <div class="row">
           <div class="col-sm-8 col-sm-offset-2">
-            <h3>Element system</h3>
-                <p>Analysing the working principle of this interface, I made a number of simplifications in the data flow design. I merged tool, configuration and its result in one block and indicated all data on it. By double click, you can manage the element.  </p>
+            <h3>Table preview</h3>
+            <p>Analysing the working principle of this interface, I made a number of simplifications in the data flow design. I merged tool, configuration and its result in one block and indicated all data on it. By double click, you can manage the element.  </p>
                  </div>
      </div>
 </div>
@@ -144,8 +157,8 @@
           <div class="container" >
         <div class="row">
           <div class="col-sm-8 col-sm-offset-2">
-            <h3>Compact view</h3>
-                <p>Scaling and moving work area not one-way scrolling
+            <h3>Manual fixing</h3>
+            <p>Scaling and moving work area not one-way scrolling
 Managing the blocks we can easy stick it together to get more space or drag and drop it by any touch interface wich make this system ready for mobile devices. </p>
                  </div>
      </div>
@@ -154,8 +167,8 @@ Managing the blocks we can easy stick it together to get more space or drag and 
               <div class="container" >
         <div class="row">
           <div class="col-sm-8 col-sm-offset-2">
-            <h3>Adding new element</h3>
-                <p>For adding a new element we can have the second interface. We can drag and drop any item to work area or push on “plus” button and also get the menu.  </p>
+            <h3>Fixing one-to-many cases</h3>
+            <p>For adding a new element we can have the second interface. We can drag and drop any item to work area or push on “plus” button and also get the menu.  </p>
                  </div>
      </div>
 </div>
@@ -163,8 +176,8 @@ Managing the blocks we can easy stick it together to get more space or drag and 
            <div class="container" >
         <div class="row">
           <div class="col-sm-8 col-sm-offset-2">
-            <h3>Work area</h3>
-                <p>I defined the structure of current stage and rebuild it partly to simplify work with instruments. The most evident problem in logic of To make more significant changes I need to understand exactly how each element works and purpose it is used for. But even on this stage </p>
+            <h3>Conclusion</h3>
+            <p>I defined the structure of current stage and rebuild it partly to simplify work with instruments. The most evident problem in logic of To make more significant changes I need to understand exactly how each element works and purpose it is used for. But even on this stage </p>
                  
                   <hr>
                    <h3>Same</h3>
