@@ -101,7 +101,7 @@
           <div class="col-sm-8 col-sm-offset-2">
               
             <h3>Informational Architecture</h3>
-                <p>I defined the structure of current stage and rebuild it partly to simplify work with instruments. The most evident problem in logic of To make more significant changes I need to understand exactly how each element works and purpose it is used for. But even on this stage </p>
+                <p>The most evident problem in the logic of menu/submenu nested items.  Elements can't belong to different logic groups in this case. Also, keeping all items in one menu panel without nesting makes it too long. Users will get tired of scrolling and confused to choose the right one. I defined the structure of current stage and rebuild it to simplify the interaction with the Source, Options and Extract. To make more significant changes it needs to understand exactly how each element works and how users expect it works. It's evidently time for inviting focus groups and playing in card sorting with them. </p>
                  </div>
      </div>
 </div>
@@ -110,7 +110,8 @@
         <div class="row">
           <div class="col-sm-8 col-sm-offset-2">
             <h3>User Flow</h3>
-                <p>I defined the structure of current stage and rebuild it partly to simplify work with instruments. The most evident problem in logic of To make more significant changes I need to understand exactly how each element works and purpose it is used for. But even on this stage </p>
+                <p>What problem are users trying to solve? Let's took one of our personas George who cares a lot to protect online reputation of his company. So he needs to track his brand mentions across the globe, on every network. He got and opened the TDW. Complete registration process. Watch some tutorials. Create a new query, add Twitter as a first source. Find right options for twitter to get last 200 posts with mention the name of his company.  Add translator from any non-English language to English and all information extract to table keeping just post and county it came from. Then he creates two filters to sort all posts into two groups with positive and negative feedback, mentioning proper words. With another element on board, he merges all information to create chart how feedback about his company and see how the ratio of opinions depends on the territorial factor. The last element sends all the information to the dashboard with special properties to renew it every 24 ours and send him notification by e-mail. Now he can repeat this procedure with other sources like Facebook and sleep at night quietly. 
+ </p>
                  </div>
      </div>
 </div>
@@ -119,8 +120,15 @@
         <div class="row">
           <div class="col-sm-8 col-sm-offset-2">
             <h3>Layout structure</h3>
-                <p>I defined the structure of current stage and rebuild it partly to simplify work with instruments. The most evident problem in logic of To make more significant changes I need to understand exactly how each element works and purpose it is used for. But even on this stage </p>
-                 </div>
+            <p>TDW is planing to be a web servise, but a complex interface and modern browsers possibilites require equating its design approach to creating UI for desktop application. Based on the above and results of research UI of flow-based software we define the graph editing process as: </p>
+            <ul>
+              <li>Adding new components </li>
+              <li>Seeing compatible places for making a connection </li>
+            <li>Finding the available components and graphs </li>
+            <li>Moving the components </li>
+            <li>Changing properties </li></ul>
+            <p>By double click, you can manage the component in the pop-up or right side panel. We'll use the left panel like functional menu and right one like properties for choosen elements. As any flow-based interface requires a lot of space, we will give the panels dynamic properties to free the work area and return on demand. </p>
+          </div>
      </div>
 </div>
                 <img class="img-responsive center-block" src="images/tdw_6.png" alt="">
@@ -128,8 +136,14 @@
         <div class="row">
           <div class="col-sm-8 col-sm-offset-2">
             <h3>Element system</h3>
-                <p>Analysing the working principle of this interface, I made a number of simplifications in the data flow design. I merged tool, configuration and its result in one block and indicated all data on it. By double click, you can manage the element.  </p>
-                 </div>
+            <p>There was the amount of simplifications maid in the data flow design: </p>
+            <ul>
+              <li>Tool, configuration and its result was merged in one block and indicated all data on it.</li>
+              <li>Created color system for links and elements, including special color to mark all non active connectors. </li>
+              <li>Visualized the information passing through the graph </li>
+              <li>Added an icon inside each component to represent the type of element and mark the difference between them. </li>
+            </ul>
+          </div>
      </div>
 </div>
                 <img class="img-responsive center-block" src="images/tdw_7.png" alt="">
@@ -137,9 +151,8 @@
         <div class="row">
           <div class="col-sm-8 col-sm-offset-2">
             <h3>Compact view</h3>
-                <p>Scaling and moving work area not one-way scrolling
-Managing the blocks we can easy stick it together to get more space or drag and drop it by any touch interface wich make this system ready for mobile devices. </p>
-                 </div>
+            <p>Browser-based flow editor makes it easy to wire together graph's element using nodes. But there is still a problem with some of the flow-based editors if they dive into too much detail, making graphs confusibly disorientetad. Vertical and horisontal scrolling change to scaling and moving work area to any side. the amount of information inside each component changes by scaling. Managing the blocks we can easy stick it together to get more space or drag and drop it by any touch interface wich make this system ready for mobile devices. </p>
+          </div>
      </div>
 </div>
                 <img class="img-responsive center-block" src="images/tdw_8.png" alt="">
@@ -147,8 +160,8 @@ Managing the blocks we can easy stick it together to get more space or drag and 
         <div class="row">
           <div class="col-sm-8 col-sm-offset-2">
             <h3>Adding new element</h3>
-                <p>For adding a new element we can have the second interface. We can drag and drop any item to work area or push on “plus” button and also get the menu.  </p>
-                 </div>
+            <p>For adding a new element we can have two different ways. We can drag and drop any item to work area or push on “plus” button and also get the menu.&nbsp;The items are not associated with the current one will mark as inactive.It is also possible add two elemets and connect them afterwards.</p>
+          </div>
      </div>
 </div>
                 <img class="img-responsive center-block" src="images/tdw_9.png" alt="">
@@ -156,8 +169,8 @@ Managing the blocks we can easy stick it together to get more space or drag and 
         <div class="row">
           <div class="col-sm-8 col-sm-offset-2">
             <h3>Work area</h3>
-                <p>I defined the structure of current stage and rebuild it partly to simplify work with instruments. The most evident problem in logic of To make more significant changes I need to understand exactly how each element works and purpose it is used for. But even on this stage </p>
-                 </div>
+            <p>The visual style of main service page is represent in dark color by defolt with possibilities to change it. It relies on TDW brandbook style guide. Navigation represent by tool panels from each side. (both can be closed if we need it) and some functional item in the bottom.  The right panel came to replace browser frame. Now we can use it for the browser if it is for URL, for preferences, if it is a filter or for the tutorial. Left menu elements are supplemented with icons. Same icons will be on graf element after we drug and drop it to work area. Also we can change query, close save it or back to home page. </p>
+          </div>
      </div>
 </div>
                 <img class="img-responsive center-block" src="images/tdw_10.png" alt="">
@@ -165,8 +178,15 @@ Managing the blocks we can easy stick it together to get more space or drag and 
         <div class="row">
           <div class="col-sm-8 col-sm-offset-2">
             <h3>Tutorial</h3>
-                <p>The tutorial system is a complex measure. It includes help book, tips, element reaction, first step training, video lessons and presets. </p>
-                 </div>
+            <p>The best design of course, like a good joke, doesn't need an explanation, but unfortunately, in this case, there's enough complexity. The tutorial system is a combination of methods that includes:</p>
+            <ul><li>Help guideline to read on cold winter nights; </li>
+            <li>Video lessons, blog and ready presets. </li>
+            <li>First-enter escort;</li>
+            <li>Hover boxes with information about the items being hovered;</li>
+            <li>Element reaction;</li>
+            <li>Search input for searching reports or help tips.</li></ul>
+
+          </div>
      </div>
 </div>
                 <img class="img-responsive center-block" src="images/tdw_11.png" alt="">
@@ -174,9 +194,9 @@ Managing the blocks we can easy stick it together to get more space or drag and 
         <div class="row">
           <div class="col-sm-8 col-sm-offset-2"> 
                 <h3>Hololens ready</h3>
-                <p>The big bright elements with all data inside can be also redesigned in 3d blocks and easily manipulated with AR devices.
- </p>
-                 </div>
+                <p>The big bright elements with all data inside can be &nbsp;redesigned in 3d blocks and easily manipulated with AR devices. </p>
+                <p>The color's functional and aesthetic roles for Hololens must be reconsidered in relation to the user's real surroundings. In difference of mobile and desktop devices users use gestures to take action. How Hololens support discrete gestures like air-tap and continuous gestures like navigation and manipulation.</p>
+          </div>
      </div>
 </div>
                 <img style="width: 100%" class="img-responsive center-block" src="images/tdw_12.jpg" alt="">
@@ -185,11 +205,13 @@ Managing the blocks we can easy stick it together to get more space or drag and 
         <div class="row">
           <div class="col-sm-8 col-sm-offset-2"> 
             <p>&nbsp;</p>
-                <p>I defined the structure of current stage and rebuild it partly to simplify work with instruments. The most evident problem in logic of To make more significant changes I need to understand exactly how each element works and purpose it is used for. But even on this stage </p>
-                  <hr>
-                   <h3>Same</h3>
-                   
-                   <hr>
+          
+           
+                  <h4>Also you can be interested in</h4>
+            <li><a href="db.html" target="_self">Database manager for merging and comparin</a></li>
+            <li><a href="stlt.html" target="_self">Gambling mobile application interface.</a> </li>
+         
+            <hr>
                  </div>
      </div>
 </div>
