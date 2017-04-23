@@ -112,6 +112,8 @@ h4 {
 }
 .block-color-06 {
     background-color: #fff;
+	background-size: contain;
+	color: #000;
 }
 .block-color-07 {
     background-color: #fff; 

@@ -58,13 +58,15 @@
             <li>Why somebody needs the special tool for merging? </li>
             <li>Who will use this tool? </li>
             <li>What feature makes this tool comfortable for users and unique on the market? </li>
-            <li>How the is the process of merging databases going on? </li>
+            <ul>
+              <li>How is the process of merging databases going on? </li>
+            </ul>
             <li>Where is the point of success in this process?</li>
             <h3>Research </h3>
-            <p>A database is kind of related data and the way it is organised. The relational database help to track information about on example users, their names, logins information, various groups and projects they are involved and normalised it into a user table, groups table and projects table, accordingly. </p>
+            <p>A database is kind of related data and the way it is organised. The relational database help to track information. For example users, their names, logins information, various groups and projects they are involved and normalised it into a user table, groups table and projects table.</p>
             <p>When information was being collected about a user, information stored in the optional tables would be found by searching for a special key. For instance, if the login name of a user is unique, all information about that user would be recorded with the login name as its key. Keys and table names play a "key" role when comparing or merging databases because it is for them to determine the identity of data. </p>
-            <p>A relational database management system uses MERGE statements to write new or overwrite existing records depending on whether condition matches. Structure and tables comparing before merging. Each time software or script find differences it doesn't know what to do unless you create a rule for each situation or manage it manually. That's why It is much easier merge the databases with the same structure, especially if you try to automate the process. Lucky I have this particular case! </p>
-            <p>In an attempt to understand what kind of errors can occur till merging I decompose the database into tables and search for various situations with unequal data: </p>
+            <p>A relational database management system uses MERGE statements to write new or overwrite existing records depending on matching conditions. Structure and tables are compared before merging. Each time software or script find differences it doesn't know what to do unless you create a rule for each situation or manage it manually. That's why It is much easier merge the databases with the same structure, especially if you try to automate the process. Luckily, I have this particular case! </p>
+            <p>In an attempt to understand what kind of errors can occur during merging I’ve decomposed the database into tables and searched for various situations with unequal data structure: </p>
             <ul><li>The one field in the database A matches the same field in the database B; </li>
             <li>The one field in the database A does not match the same field in the database B; </li>
             <li>The one field does not exist in the database A but does exist in the database B; </li>
@@ -86,8 +88,8 @@
              <div class="container" >
         <div class="row">
           <div class="col-sm-8 col-sm-offset-2">
-            <p>I gather a test group of 8 programmers who have experience with databases and ask in detail what they use for this and how their process looks. What are the most common mistakes and how do they fix them. Including we collect screenshots of interfaces related to databases by comparing two databases and merging data. </p>
-           </div>
+            <p> I’ve gathered a test group of 8 programmers who have experience with databases and asked them which tools do they use for this task and how their process looks. What are the most common mistakes and how do they fix them. Including we collect screenshots of interfaces related to databases by comparing two databases and merging data. </p>
+          </div>
         </div>
     </div>
                 <img class="img-responsive center-block" src="images/db_2.2.png" alt="">
@@ -95,7 +97,7 @@
         <div class="row">
           <div class="col-sm-8 col-sm-offset-2">
              <h3>User flow</h3>
-            <p>Based on the interviews and data collected, we recreate the process of using the utility.</p>
+             <p>Based on collected data, I’ve recreated the process of using the utility.</p>
           </div>
      </div>
 </div>
@@ -106,11 +108,13 @@
           <div class="col-sm-8 col-sm-offset-2">
               
             <h3>First try</h3>
-            <p>The first version of layout is a step-by-step process that guides the user through the interface: </p>
-            <ul><li>Step one: Loading 2 databases and specify where to save the merged one. The database can be uploaded as a file or specify a link to a remote server, enter a login and password. </li>
-            <li>Step two: Inspecting the structure of the loaded databases and selecting the rules and settings before merging. </li>
-            <li>Step three: Editing each conflict manually (If the general rules are not chosen) </li>
-				<li>Step four: saving and exporting the database.</li></ul>
+            <p>The first version of the layout is a step-by-step process that guides the user through the interface: </p>
+            <ul>
+              <li>Step one: Load 2 databases and specify where to save the merged one. The databases can be added as files or as a link to a remote server. </li>
+              <li>Step two: Inspect the structure of the loaded databases and select the rules and settings for common cases before merging. </li>
+              <li>Step three: Edit remaining conflicts manually (If the general rules are not chosen) </li>
+              <li>Step four: save and export the database. </li>
+            </ul>
           </div>
      </div>
 </div>
@@ -119,15 +123,16 @@
         <div class="row">
           <div class="col-sm-8 col-sm-offset-2">
             <h3>Testing</h3>
-            <p>Besides, I have a prototype I can return to my test group of programmers. They were asked to try database merging through prototype and give honest feedback. I measure the result and time of merging. The results were mostly successful but the test group was not satisfied with the user experience. Their feedback ordered to: </p>
-            <ul><li>Add a number of conflicts in each table, because what this can depend on is the type of conflict. </li>
-            <li>Allow Apply rules for automatic merging to individual tables and to the entire database. </li>
-            <li>Add a preview of the table in the conflicts highlighted in it. </li>
-            <li>Provide an Open record for editing as a column and not as a string. </li>
-            <li>Remove the parameter names inside the table in the left-hand dice because they are useless and not interesting. </li>
-            <li>Consider that the utility will not be able to load photos from dumps </li>
-				<li>Remove the rule allowing the Deletion of conflicting parameters because at merge try to save a maximum of data </li></ul>
-            <p>We are assembling a new version. We take into account errors. Again we test on programmers and again we celebrate. All wishes exceeding the standard base interface are transferred to the second release.</p>
+            <p>After I created a prototype I returned to my test group of programmers. They were asked to try merging with the prototype and give a feedback. I’ve measured the result and time required for a user to complete the operation. The results were mostly successful but the test group was not satisfied with the user experience. They wanted to: </p>
+            <ul>
+              <li>Add a number of conflicts in each table. </li>
+              <li>Allow to apply rules for automatic merging to individual tables and to the entire database. </li>
+              <li>Add a preview of the table with the conflicts highlighted. </li>
+              <li>See an open record like a column not like a row. </li>
+              <li>Remove the parameter names inside the table because they are useless and not interesting. </li>
+              <li>Consider that the utility will not be able to load photos from database dumps </li>
+              </ul>
+            <p>After a couple of testing and fixing, I created the second version of the tool. </p>
             <h3> Start</h3>
             <p>When you click the Start Comparison button in the Database Comparison Toolbar, contents of the selected tables are compared and the database comparison map is updated to show comparison results. If the results of automatic mapping are inaccurate or incomplete, you can also manually map comparisons by dragging connecting lines between table columns. </p>
           </div>
@@ -138,7 +143,7 @@
         <div class="row">
           <div class="col-sm-8 col-sm-offset-2">
             <h3>Creating rules</h3>
-            <p>When you compare different database types, you will get a warning </p>
+            <p>When you compare different database types, you will get a warning.</p>
           </div>
      </div>
 </div>
@@ -147,7 +152,7 @@
         <div class="row">
           <div class="col-sm-8 col-sm-offset-2">
             <h3>Table preview</h3>
-            <p> You can open detailed results windows for each table comparison, and filter the results to display or hide your preference of equal or unequal rows, rows that only contain data in the table on the left or right, or entire columns that contain identical data. </p>
+            <p> You can open detailed results window for each table comparison, and filter the results to display or hide your preference of equal or unequal rows, rows that only contain data in the table on the left or right, or entire columns that contain identical data. </p>
           </div>
      </div>
 </div>
@@ -165,8 +170,8 @@
         <div class="row">
           <div class="col-sm-8 col-sm-offset-2">
             <h3>Fixing one-to-one cases</h3>
-            <p>For adding a new element we can have the second interface. We can drag and drop any item to work area or push on “plus” button and also get the menu.  </p>
-                 </div>
+            <p>For adding a new element we can have the second interface. We can drag and drop any item to work area or push on “plus” button and also get the menu. </p>
+          </div>
      </div>
 </div>
                 <img class="img-responsive center-block" src="images/db_9.png" alt="">
@@ -174,9 +179,8 @@
         <div class="row">
           <div class="col-sm-8 col-sm-offset-2">
             <h3>Conclusion</h3>
-            <p>I defined the structure of current stage and rebuild it partly to simplify work with instruments. The most evident problem in logic of To make more significant changes I need to understand exactly how each element works and purpose it is used for. But even on this stage </p>
-                 
-                  <hr>
+            <p>My test group was really pleased with last version of tool, but still they have desagreements about some steps and a lot of wishes about new feachers. For the next releases I desided to use a bigger programmer's community to collect more feedbacks.</p>
+            <hr>
                   <h4>&nbsp;</h4>
                   <h4>Also you can be interested in</h4>
                   <li><a href="tdw.html" target="_self">Designing SMM&amp;A flow‑based interface</a></li>
