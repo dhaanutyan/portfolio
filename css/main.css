@@ -1,0 +1,148 @@
+html, body {
+    overflow-x: hidden;
+}
+body{
+}
+footer{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+p {
+    font-family: Roboto;
+    font-weight: 300;
+    letter-spacing:0px;
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+a {
+text-decoration-color: blue;
+text-decoration-line: underline;    
+}
+.order-01-01 {z-index: 99999;}
+
+h1 {
+    font-family: Cantarell;
+    font-weight: bolder;
+    margin-top: 0px;
+	font-size: 48px;
+    margin-bottom: 24px;
+	line-height: 44px;
+}
+h2 {
+    font-family: Cantarell;
+    font-weight: bolder;
+    margin-top: 0px;
+	font-size: 36px;
+    margin-bottom: 20px;
+	line-height: 44px;
+
+}
+
+h3,h4,h5,h6 {
+     font-family: Inconsolata;
+     font-weight: 300;
+     letter-spacing: 1px;
+     margin-top: 0;
+     margin-bottom: 20px;
+}
+h4 {
+     font-family: Inconsolata;
+	 color: #9B9B9B;
+     font-weight: 300;
+     letter-spacing: 1px;
+     margin-top: 0;
+	 line-height: 24px;
+     margin-bottom: 6px;
+}
+.photo-of-me {
+    margin-right: 40px;
+    margin-bottom: 20px;
+    float: left;
+}
+.photo-in-box {
+    margin-top: 20px;
+    margin-bottom: 0px;
+    align-self: center;
+}
+.about-me {
+    width: 100%;
+    padding: 3%;
+}
+.about-me-text {
+    margin-top: 20px;
+    float: left;
+}
+.navbar-add-style {width: 50px}
+.block-main {width: 100%;}
+.block-inside {
+    height: 500px;
+    padding: 3%;
+    z-index: 999;
+    text-align: center;
+    align-items: center;
+}
+.block-color-01 {
+	background: url(stlt_mob.png) #F2F2F2 no-repeat bottom;
+	background-size: contain;
+	color: #000;
+}
+.block-color-02 {
+	background: url(tdw_dskt.png) no-repeat bottom;
+    background-color: #042233;
+		background-size: auto;
+    color: #FFFFFF;
+}
+.block-color-03 {
+ background: url(rb_mob.png) #F2F2F2 no-repeat bottom;
+	background-size: contain;
+	color: #000;
+}
+.block-color-04 {
+	background: url(VR_mob.png) no-repeat bottom;
+	background-size: contain;
+    background-color: #000;
+    color: #FFFFFF;
+}
+.block-color-05 {
+	background: url(db_dskt.png) no-repeat bottom;
+	background-size: contain;
+	color: #000;
+    background-color: #fce7f2;
+}
+.block-color-06 {
+	background: url(flpl.png) no-repeat bottom;
+    background-color: #007AFF;
+	background-size: contain;
+	color: #FFF;
+}
+.block-color-07 {
+    background-color: #fff; 
+}
+.block-color-08 {
+	background: url(stlt_dskt.png) no-repeat bottom;
+	background-size: contain;
+    background-color: #4A4A4A;
+	color: #fff;
+}
+.block-color-09 {
+	background: url(GD_mob.png) no-repeat bottom;
+	background-size: contain;
+    background-color: #E8E8E8;
+	color: #000;
+}
+.block-color-10 {
+	background: url(onl_dskt.png) no-repeat bottom;
+	background-size: contain;
+    background-color: #E4DAD1;
+    color: #000;	
+}
+.block-color-11 {
+		background: url(stlt_app.png) no-repeat bottom;
+	background-size: contain;
+    background-color: #000;
+	color: #FFFFFF;
+}
+.block-color-12 {
+background-color: #fff;
+}
