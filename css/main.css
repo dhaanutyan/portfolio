@@ -147,5 +147,8 @@ h4 {
 	color: #FFFFFF;
 }
 .block-color-12 {
-background-color: #fff;
+	background: url(GD_mob.png) no-repeat bottom;
+	background-size: contain;
+background-color: #B7C0D0;
+	color: #000;	
 }
