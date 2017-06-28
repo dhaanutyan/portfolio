@@ -83,7 +83,7 @@
         <div class="row">
           <div class="col-sm-8 col-sm-offset-2">
             <h3>Audience</h3>
-            <p> Developers, data architects, and others who regularly work with databases often need to locate changes, migrate differences, or synchronise versions of database tables. They need database compare and merge tool to satisfy all these requirements. </p>
+            <p> Developers, data architects, and others who regularly work with databases often need to locate changes, migrate differences, or synchronise versions of database tables. They need database comparison and merging tools to satisfy all these requirements.  </p>
 </div>
         </div>
     </div>
@@ -91,7 +91,7 @@
              <div class="container" >
         <div class="row">
           <div class="col-sm-8 col-sm-offset-2">
-            <p> I’ve gathered a test group of 8 programmers who have experience with databases and asked them which tools do they use for this task and how their process looks. What are the most common mistakes and how do they fix them. Including we collect screenshots of interfaces related to databases by comparing two databases and merging data. </p>
+            <p> I’ve gathered a test group of 8 programmers who have experience with databases and asked them which tools they use for this task and how their process of usage looks like? What are the most common mistakes and how do they fix them? Also, screenshots of interfaces related to databases comparison and merging were collected and analyzed. </p>
           </div>
         </div>
     </div>
@@ -100,7 +100,7 @@
         <div class="row">
           <div class="col-sm-8 col-sm-offset-2">
              <h3>User flow</h3>
-             <p>Based on collected data, I’ve recreated the process of using the utility.</p>
+             <p>Based on collected data, the process of usage the utility has been recreated.</p>
           </div>
      </div>
 </div>
@@ -110,12 +110,12 @@
         <div class="row">
           <div class="col-sm-8 col-sm-offset-2">
               
-            <h3>First try</h3>
+            <h3>First attempt</h3>
             <p>The first version of the layout is a step-by-step process that guides the user through the interface: </p>
             <ul>
               <li>Step one: Load 2 databases and specify where to save the merged one. The databases can be added as files or as a link to a remote server. </li>
-              <li>Step two: Inspect the structure of the loaded databases and select the rules and settings for common cases before merging. </li>
-              <li>Step three: Edit remaining conflicts manually (If the general rules are not chosen) </li>
+              <li>Step two: Inspect the structure of the loaded databases and select the rules and settings for common cases before merging.</li>
+              <li>Step three: Edit remaining conflicts manually (If the general rules are not chosen)</li>
               <li>Step four: save and export the database. </li>
             </ul>
           </div>
@@ -126,18 +126,20 @@
         <div class="row">
           <div class="col-sm-8 col-sm-offset-2">
             <h3>Testing</h3>
-            <p>After I created a prototype I returned to my test group of programmers. They were asked to try merging with the prototype and give a feedback. I’ve measured the result and time required for a user to complete the operation. The results were mostly successful but the test group was not satisfied with the user experience. They wanted to: </p>
+            <p>After the prototype was created I returned to my test group of programmers. They were asked to try merging with the  prototype and give feedback. The result and time required for a user to complete the operation were measured. The results were mostly successful, but the test group was not satisfied with the user experience. They wanted to:</p>
             <ul>
-              <li>Add a number of conflicts in each table. </li>
-              <li>Allow to apply rules for automatic merging to individual tables and to the entire database. </li>
-              <li>Add a preview of the table with the conflicts highlighted. </li>
-              <li>See an open record like a column not like a row. </li>
-              <li>Remove the parameter names inside the table because they are useless and not interesting. </li>
-              <li>Consider that the utility will not be able to load photos from database dumps </li>
+              <li>Add a number of conflicts in each table</li>
+              <li>Be allowed to apply  rules for automatic merging to individual tables and to the entire database. </li>
+              <li>Add a preview of the table with the highlighted conflicts.</li>
+              <li>See an open record as a column not as a row.</li>
+              <li>Remove the parameter names from inside the table because they are useless and not interesting.</li>
+              <li>Consider that the utility will not be able to load photos from database dumps 
+ 
+</li>
               </ul>
-            <p>After a couple of testing and fixing, I created the second version of the tool. </p>
+            <p>After some testing and fixing, the second version of the tool was created.</p>
             <h3> Start</h3>
-            <p>When you click the Start Comparison button in the Database Comparison Toolbar, contents of the selected tables are compared and the database comparison map is updated to show comparison results. If the results of automatic mapping are inaccurate or incomplete, you can also manually map comparisons by dragging connecting lines between table columns. </p>
+            <p>When you click the Start Comparison button in the Database Comparison Toolbar, contents of the selected tables are compared and the database comparison map is updated to show comparison results. If the results of automatic mapping are inaccurate or incomplete, you can also manually map comparisons by dragging connecting lines between table columns.</p>
           </div>
      </div>
 </div>
@@ -146,7 +148,7 @@
         <div class="row">
           <div class="col-sm-8 col-sm-offset-2">
             <h3>Creating rules</h3>
-            <p>When you compare different database types, you will get a warning.</p>
+            <p>When different database types are compared a warning is displayed.</p>
           </div>
      </div>
 </div>
@@ -155,7 +157,7 @@
         <div class="row">
           <div class="col-sm-8 col-sm-offset-2">
             <h3>Table preview</h3>
-            <p> You can open detailed results window for each table comparison, and filter the results to display or hide your preference of equal or unequal rows, rows that only contain data in the table on the left or right, or entire columns that contain identical data. </p>
+            <p> Detailed results window can be opened for each table comparison, and results can be filtered to display or hide your preference of equal or unequal rows, rows that only contain data in the table on the left or right, or entire columns that contain identical data.  </p>
           </div>
      </div>
 </div>
@@ -164,7 +166,8 @@
         <div class="row">
           <div class="col-sm-8 col-sm-offset-2">
             <h3>Fixing one-to-many cases</h3>
-            <p>After you identify and fix differences between tables, you can merge content in either direction by updating individual cells or entire tables.</p>
+            <p>After differences between tables are identified and fixed, content can be merged in the same way by updating individual cells or entire tables.
+</p>
           </div>
      </div>
 </div>
@@ -173,7 +176,7 @@
         <div class="row">
           <div class="col-sm-8 col-sm-offset-2">
             <h3>Fixing one-to-one cases</h3>
-            <p>For adding a new element we can have the second interface. We can drag and drop any item to work area or push on “plus” button and also get the menu. </p>
+            <p>The second interface can be used for adding a new element. Any items can be dragged and dropped to the work area or by pressing the “plus” button and also accessing the menu. </p>
           </div>
      </div>
 </div>
@@ -182,7 +185,8 @@
         <div class="row">
           <div class="col-sm-8 col-sm-offset-2">
             <h3>Conclusion</h3>
-            <p>My test group was really pleased with last version of tool, but still they have desagreements about some steps and a lot of wishes about new feachers. For the next releases I desided to use a bigger programmer's community to collect more feedbacks.</p>
+            <p>My test group was really pleased with last version of the tool, but they still have concerns about some steps and a lot of wishes about new features. For the next releases I have decided to use a bigger programmer community to collect more feedback.
+</p>
             <hr>
                   <h4>&nbsp;</h4>
                   <h4>Also you can be interested in</h4>
