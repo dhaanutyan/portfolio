@@ -94,7 +94,7 @@ h4 {
     color: #FFFFFF;
 }
 .block-color-03 {
- background: url(rb_mob.png) #F2F2F2 no-repeat bottom;
+ background: url(FRNSH_mob.png) #F2F2F2 no-repeat bottom;
 	background-size: contain;
 	color: #000;
 }
@@ -129,7 +129,7 @@ h4 {
 	color: #fff;
 }
 .block-color-09 {
-	background: url(FRNSH_mob.png) no-repeat bottom;
+	background: url(rb_mob.png) no-repeat bottom;
 	background-size: contain;
     background-color: #E8E8E8;
 	color: #000;
