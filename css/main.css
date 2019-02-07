@@ -94,7 +94,7 @@ h4 {
     color: #FFFFFF;
 }
 .block-color-03 {
- background: url("prsm_desk.png") #F2F2F2 no-repeat bottom;
+ background: url(prsm_desk.png) #F2F2F2 no-repeat bottom;
 	background-size: contain;
 	color: #000;
 }
