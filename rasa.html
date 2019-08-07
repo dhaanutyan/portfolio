@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta name="robots" content="noindex">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Blog Post - Start Bootstrap Template</title>
+<script src="js/statbot.js"></script>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/blog-post.css" rel="stylesheet">
+ 
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+ <script src="http://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js"></script>
+<script type="text/javascript">
+  WebFont.load({
+    google: {
+      families: ['Cantarell', 'Inconsolata', 'Roboto']
+    }
+  });
+</script>
+<style type="text/css">
+  .wf-loading h1 { visibility: hidden; }
+  .wf-active h1, .wf-inactive h1 { 
+    visibility: visible; font-family: 'Cantarell', 'Inconsolata', 'Roboto'; 
+  }
+</style>
+</head>
+
+<body><!--
+    <div class="container"  >
+	 <a href="index.html">⟵ Back to main page</a>
+	 <p>&nbsp;</p>
+	</div>-->
+    <!-- Navigation -->
+    <!-- Page Content -->
+    <div class="container" >
+        <div class="row">
+          <div class="col-sm-8 col-sm-offset-2">
+            <h1>Monitor and Debug Model Predictions </h1>
+            <h4>The PM should be able to discover and flag cases where the model got the breed wrong. The engineer should be able to notify the PM when they have a new model that resolves these cases. NB the engineer is happy with their existing tools for training and deploying models, so you will have to think about how those will integrate with your solution. </h4>
+           
+            <p>&nbsp;</p>	
+		   			  <img class="img-responsive center-block" src="rasa/ml.jpg" alt="">
+
+
+			  <h3>Questions</h3>
+			
+			  <li>What are the tools for training and deploying models? </li>
+			  <li>How the process of training and deploying models looks like? </li>
+			  <li>How Would the PM know that the case is wrong? </li>
+			  <li>What information an engineer needs from PM to tune the model? </li>
+		    <li>What is the life cycle of each photo(case) in this process?</li>
+			  
+			  
+			  <h3>Assumptions</h3>
+	        <li>There are two types of users </li>
+			    <li>There are two different tools (parts) which can exchange with data </li>
+			    <li>The main object of manipulation is a MODEL and WRONG ISSUES </li>
+			  <p>or</p>
+			  <li>Both users are working with one tool </li>
+		    
+			  <h3>Objects</h3>
+			  <p>What is the model? What can we tell about this object? </p>
+			  <li>Model it is a list of rules (may consist of decisions/cases) </li>
+			  <li>Model can have a name </li>
+		    <li>Model can have a time stamps </li>
+			  
+			    <li>Model can be on different stages of its life cycle</li>
+			    <p>&nbsp;</p>
+			  <p>A rule (decision/case) is an object too </p>
+			  <li>Photo </li>
+		    <li>Number</li>
+			  <li>Status of breed detection by ML: strong yes, strong no, maybe (a couple of variants) </li>
+			  <li>Main Breed label was chosen by ML </li>
+			  <li>Suggested breed labels by ML </li>
+			  <li>Main Breed label was chosen by PM </li>
+			  <li>Suggested breed labels by PM </li>
+ <p>&nbsp;</p>			  
+<p> How many types of models (statuses/stages) do we have? </p>
+			  <li>New model </li>
+			  <li>Ready for testing (training/retraining) by PM </li>
+			  <li>Testing (training/retraining) in progress </li>
+			  <li>Tested (trained/retrained)by PM </li>
+			  <li>Ready for deployment </li>
+			  <li>Deployed </li>
+
+			  <h3>The solution</h3>
+			  <p>The plugin is tagging the photos in a FB group. All taggings synchronized with our tool in real-time (maybe) Let's use a bit of crowdsourcing: Users/admins can press a button REPORT and (we should add the wrong breed option) report perhaps even suggest the right tag. </p>
+		    <p>The information is coming to our tool for PM with link to the name/number of the current model. PM can see the list of models/versions. For each model PM can check the date stamp, statistics (right/wrong, etc.) and list of the cases. Each case can have a page when PM can check and fix the issue. </p>
+			  <p>Developer or the system itself or they together make changes in the model and deploy it. After deployment PM can start the process of marking and fixing again. It works as an evaluation loop until the statistic will be satisfying. </p>
+			  <img class="img-responsive center-block" src="rasa/1.png" alt="">
+	
+			  
+          </div>
+        </div>
+    </div>
+                
+    
+        <div class="container" >
+        <div class="row">
+          <div class="col-sm-8 col-sm-offset-2">
+            <h3>Used sources</h3>
+            <li><a href="#">Deploy an image classification model in Azure Container Instances</a></li>
+			   <li><a href="#">Debug a Deep Learning Network</a></li>
+            
+			             </div>
+        </div>
+    </div>
+	
+	
+        
+        <!-- Footer -->
+                    <div class="container" >
+        <div class="row">
+          <div class="col-sm-8 col-sm-offset-2">
+         
+          </div>
+        </div>
+    </div>
+    <footer>
+		<hr>
+      <p class="text-center">&copy; 2008—2019 Me, Inc.</p>
+    </footer>
+ <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
